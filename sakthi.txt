@@ -1,0 +1,3 @@
+server 2 for stock
+server for coordinator 
+server 1 for workers

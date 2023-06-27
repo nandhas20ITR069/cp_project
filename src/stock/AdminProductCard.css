@@ -1,0 +1,57 @@
+/* 
+#sakthi{
+    
+}
+
+.card-img-top{
+
+    width: 150px;
+    height: 200px;
+    z-index: 1;
+    position:static;
+    
+}
+.card-body{
+
+} */
+
+
+.updateee{
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 2px 5px;
+  
+}
+
+
+
+.carde {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    /* transition: 0.3s; */
+    
+    width: 30%;
+    
+
+    /* margin-left: -600px; */
+    
+    
+    
+    
+  }
+  
+  .carde:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .containerr {
+    padding: 2px 16px;
+    display: inline;
+    flex-direction: row;
+    
+  }
+  .ima{
+    width: 200px;
+    height: 250px;
+    position: static;
+    
+  }
