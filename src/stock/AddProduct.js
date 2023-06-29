@@ -204,20 +204,12 @@ const AddProduct = () => {
                 className="block text-gray-700 text-sm font-bold mb-2"
                 htmlFor="password"
               >
-                Total Sales
+                Toal Sales
               </label><br/>
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="password"
                 type="number"
-                placeholder="Price"
-                onChange={(e) => setStocks(e.target.value)}
-                value={stocks}
-              />
-               <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="password"
-                type="text"
                 placeholder="Price"
                 onChange={(e) => setStocks(e.target.value)}
                 value={stocks}

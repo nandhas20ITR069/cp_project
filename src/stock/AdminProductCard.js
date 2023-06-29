@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 // import { Button, Label, Modal, TextInput, Textarea } from "flowbite-react";
-import { deleteProduct, updateProduct, updateerodeProduct } from "./api";
+import { deleteProduct, updateProduct } from "./api";
 import {  useHistory } from "react-router-dom";
 import './AdminProductCard.css'
 const AdminProductCard = ({ product }) => {
@@ -24,11 +24,10 @@ const AdminProductCard = ({ product }) => {
   };
 
 
-
   const updateOneProduct =()=>{
-    const body = {pid,uname,uprice,udesc,image,stock,_id:product._id}
+    const body = {pid,uname,uprice,udesc,image,stock}
     console.log(body)
-    updateerodeProduct(body);
+    updateProduct(body);
     window.location.reload();
   }
   // const [modelShow, updateModelShow] = useState(false);
@@ -63,31 +62,6 @@ const AdminProductCard = ({ product }) => {
   </div>
 </div>
 
-
-
-    
-    {/* <div class="card" id="sakthi" style={{width: '20rem',color:"white"}}>
-      <center>
-    <img class="card-img-top" src={`${image}`} alt="Card image cap"/></center>
-  <div class="card-body">
-    <h5 class="card-title">{name}</h5>
-    Stocks: <span className=""> <input type="number" value={stock} defaultValue={stocks} onChange={(e)=>setStock(e.target.value)} /></span>
-    <span className="">Price: ₹<input type="number" value={uprice} defaultValue={price} onChange={(e)=>setUprice(e.target.value)}/></span>
-          
-    <button
-            className=""
-            onClick={updateOneProduct}
-          >
-            Update{" "}
-          </button>
-          <button
-            className=""
-            onClick={deleteOneProduct}
-          >
-            Delete{" "}
-          </button>
-  </div>
-</div> */}
 
 
 
